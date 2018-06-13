@@ -1,0 +1,17 @@
+*{
+    color: rgb(107, 102, 102);
+}
+.container{
+    width: 50%;
+    margin-top: 8%;
+    border: 3px solid rgba(37, 22, 247, 0.883);
+    border-radius: 25px;
+}
+h1{
+    color: black;
+    padding-top: 4%;
+    text-align: center;
+}
+form{
+    padding-bottom: 4%;
+}

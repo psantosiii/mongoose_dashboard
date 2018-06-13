@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Mongooses</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>All Mongooses</h1>  
+        <% for(let x of mongoose){%>
+        <div id="allmongooses">
+              <h4><%= x.name %>"</h4>
+              <p><%= x.detail %>"</p>
+              <p><%= x.created_at%></p>
+              <p><%= x._id%></p>
+            <a href="/edit/<%= x._id%>"</a><button type="button" class="btn btn-warning">Edit Mongoose</button></a>
+            <a href="/delete/<%= x._id%>"</a><button type="button" class="btn btn-danger">Delete Mongoose</button></a>
+            <br>
+        </div>
+  <%}%> 
+    </div>
+    <a href="/"</a><button type="button" class="btn btn-danger">Return To Dashboard</button></a>
+    <div class="edit">
+
+    </div>
+</body>
+
+</html>
